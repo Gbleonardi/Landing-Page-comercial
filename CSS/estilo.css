@@ -1,10 +1,13 @@
 * {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 :root {
     font-size: 62.5%;
+
+    --nav-height: 7.2rem
 }
 
 body {
@@ -13,13 +16,17 @@ body {
     font-size: 1.6rem;
     text-align: center;
 
+
+
+
 }
 
 header {
-    margin-top: 4.1rem;
+    margin-top: calc(4.1rem + var(--nav-height));
     width: 37.5rem;
     margin-right: auto;
     margin-left: auto;
+    padding-inline: 2.4rem;
 
 }
 
@@ -46,9 +53,9 @@ p {
 button {
     background-color: black;
     color: white;
-    border-radius:4rem;
+    border-radius: 4rem;
     margin-bottom: 6rem;
-    height: 6.2rem;
+    height: 4rem;
     width: 26.3rem;
     text-transform: uppercase;
     font-size: 1.4rem;
@@ -59,8 +66,103 @@ button {
     gap: 0.5rem;
     margin-right: auto;
     margin-left: auto;
+    padding: 1.9rem;
+
 }
 
 img {
     border-radius: 0.8rem;
+    display: block;
+    margin-inline: auto;
+    object-position: 0;
+
+
+
+}
+
+.logo_note {
+
+    box-shadow: 0 0 1em black;
+}
+
+.stats_card {
+    width: 32.7rem;
+    padding-block: 4rem;
+    margin-inline: auto;
+    background-color: white;
+    border: 1px solid silver;
+    border-radius: 0.8rem;
+    box-shadow: 0 0 1em black;
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s;
+    /* justify-content: center; */
+    /* gap: 6rem; */
+
+
+}
+
+.stats_card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.stats_card h3 {
+
+    font-size: 4.8rem;
+    line-height: 130%;
+    margin-bottom: 0.4rem;
+
+}
+
+
+.stats_card p {
+    margin: 0;
+    font-size: 1.6rem;
+    line-height: 150%;
+
+}
+
+header::before {
+    content: "";
+    width: 100vw;
+    height: calc(108rem + var(--nav-height));
+    background-color: white;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: var(--nav-height);
+    position: fixed;
+    top: 0;
+    transform: translateX(-10%);
+    background-color: sil;
+
+
+}
+
+.icon {
+    margin-left: 36rem;
+    background-color: #f1f1f1;
+
+}
+
+.logo {
+    margin-right: 100%;
+    padding-right: 100%;
+    background-color: #f1f1f1;
+
+
+}
+
+nav.scroll {
+
+    opacity: initial;
+
 }

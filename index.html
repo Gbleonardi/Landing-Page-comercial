@@ -10,9 +10,18 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+
 </head>
 
-<body>
+<body onscroll="onScroll()">
+  <nav id="navigation" class="scroll">
+    <a class="logo" href="#"><img src="./Assets/logo.png" alt="Logo"></a>
+  </nav>
+
+  <nav class="scroll">
+    <a class="icon" href="#"><img src="./Assets/Icon.png" alt="icon"></a>
+  </nav>
+
   <header>
     <div>
       <h4>BEM VINDO A NOTEBCARE</h4>
@@ -31,17 +40,33 @@
 
       agende um orçamento
     </button>
-    <img src="./Assets/artiom-vallat-ipBFtdN5vVg-unsplash.jpg" alt="foto notebook" width="250" height="300" />
+    <img class="logo_note" src="./Assets/artiom-vallat-ipBFtdN5vVg-unsplash.jpg" alt="foto notebook" width="250"
+      height="300" />
+    <img class="logo_note" src="./Assets/4bb4f6a82f715714f328d0d3f1299ff728e76c272c1de8398a3e826b8b633078a4b2.png"
+      alt="foto notebook" width="250" height="300" />
 
-    <div>
+
+    <div class="stats_card">
       <h3>+3.500</h3>
       <p>Cliente atendidos</p>
+    </div>
+
+    <div class="stats_card">
       <h3>+20</h3>
       <p>Especialistas disponíveis</p>
+    </div>
+
+    <div class="stats_card">
       <h3>+10</h3>
       <p>Anos no mercado</p>
     </div>
+
+
   </header>
+
+  <script src="./JS/Main.js"></script>
+  <script src="./JS/Slideshow.js"></script>
+
 </body>
 
 </html>
