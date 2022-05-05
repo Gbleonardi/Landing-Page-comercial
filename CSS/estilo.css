@@ -125,7 +125,7 @@ header img {
   background-color: var(--brand-beige);
   border: 1px solid var(--brand-light);
   border-radius: 0.6rem;
-  box-shadow: 0 0 1em black;
+  box-shadow: 0 0 1em silver;
 
   display: flex;
   flex-direction: column;
@@ -293,4 +293,14 @@ body.menu-expanded button path {
   object-position: 0;
   box-shadow: 0 0 1em black;
 
+}
+
+.logo_note {
+  animation-name: none;
+  animation-duration: 1.9s;
+}
+
+@keyframes slide {
+  from {opacity: .4}
+  to {opacity: 1}
 }
