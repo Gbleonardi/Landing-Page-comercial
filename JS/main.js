@@ -1,8 +1,28 @@
+window.addEventListener('scroll', onScroll)
+
+
+onScroll()
 function onScroll() {
+  showNavOnScroll()
+  showBackToTopButtonOnscroll()
+
+}
+
+function showNavOnScroll() {
   if (scrollY > 0) {
     navigation.classList.add('scroll')
   } else {
     navigation.classList.remove('scroll')
+  }
+
+}
+
+
+function showBackToTopButtonOnscroll() {
+  if (scrollY > 1000) {
+    backToTopButton.classList.add('show')
+  } else {
+    backToTopButton.classList.remove('show')
   }
 }
 
@@ -29,3 +49,5 @@ ScrollReveal({
   #about, 
   #about header, 
   #about .content`)
+
+
