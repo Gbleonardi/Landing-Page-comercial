@@ -209,6 +209,7 @@ img {
   max-width: 100%;
   border-radius: 0.8rem;
   box-shadow: 0 0 1em black;
+  margin-top: 4rem;
 
 
 }
@@ -881,6 +882,7 @@ footer .col-a {
 footer .col-b {
   align-self: center;
   justify-self: flex-end;
+  
 }
 
 footer p {
